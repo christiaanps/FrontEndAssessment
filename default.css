@@ -1,0 +1,315 @@
+﻿@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
+
+html, body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: Calibri;
+    font-size: 12pt;
+    font-weight: 800;
+}
+
+h1, h2, h3, h4 {
+    margin:10px !important;
+    line-height: 100%;
+    padding: 0px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+p, ol, ul {
+    margin-top: 0px;
+}
+
+/** WRAPPER */
+
+#wrapper {
+    margin: 0px 20px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/** HEADER */
+
+#header {
+    position: relative;
+    overflow: hidden;
+}
+
+.border-bottom {
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-color: lightblue;
+}
+
+.margin-top{
+    margin-top:20px;
+}
+
+#social {
+    float: right;
+    right: 0;
+}
+
+/** LOGO */
+
+#logo {
+    display: inline-block;
+}
+
+    #logo h1 {
+        text-transform: lowercase;
+    }
+
+        #logo p a {
+            color: rgba(255,255,255,.8);
+        }
+
+    #logo a {
+        border: none;
+        background: none;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+/** MENU */
+
+#menu {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.menu-right {
+    float: right;
+}
+
+#menu ul {
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    display: block;
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    color: whitesmoke;
+    border: none;
+}
+
+    #menu a:hover, #menu .current_page_item a {
+        text-decoration: none;
+        color: rgba(255,255,255,0.8);
+    }
+
+#menu .current_page_item a {
+    border: solid;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: lightblue;
+    color: whitesmoke;
+}
+
+#menu .last {
+    border-right: none;
+}
+
+#tab {
+    display: inline-block;
+    background-color: #555;
+    border-bottom-color: darkred;
+    border-bottom-style: solid;
+    overflow: visible;
+}
+
+.tab-right {
+    float: right;
+}
+
+#tab ul {
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+#tab li {
+    display: inline-block;
+    position: initial;
+}
+
+#tab a {
+    padding: 15px 15px 18px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    color: whitesmoke;
+    border-right: 1px solid lightblue;
+}
+
+#tab a:hover, #tab .current_page_item a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+#tab .current_page_item a {
+    background-color: darkred;
+    border-width: thin;
+    color: whitesmoke;
+}
+
+/** PAGE */
+
+#page {
+    overflow: hidden;
+    padding: 5em 0em;
+    position: relative;
+    overflow: hidden;
+}
+
+/** CONTENT */
+
+#content {
+    width: 800px;
+    padding-right: 50px;
+    background-color: lightgray;
+}
+
+    #content input {
+        margin: 10px;
+        padding: 10px;
+        font-weight: 100;
+    }
+
+    #content a {
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+.active-button {
+    background-color: darkred !important;
+    color: whitesmoke !important;
+    margin: 10px;
+}
+
+.inactive-button {
+    background-color: whitesmoke;
+    color: black;
+    margin: 10px;
+    font-weight: 100;
+}
+
+.red-italic-underscore-button{
+    color:darkred;
+    font-style:italic;
+    text-decoration: underline;
+}
+
+.orangered-button {
+    background-color: orangered;
+    padding: 4px;
+    font-size: 9px;
+}
+
+/*********************************************************************************/
+/* Row Style                                                                  */
+/*********************************************************************************/
+
+.row {
+    padding: 10px;
+}
+
+.col-md-6 * {
+    width: 100%;
+}
+
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+ul.contact {
+    list-style: none;
+}
+
+    ul.contact li {
+        display: inline-block;
+    }
+
+        ul.contact li span {
+            display: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.contact li a {
+        }
+
+            ul.contact li a:before {
+                display: inline-block;
+                width: 40px;
+                text-align: center;
+                color: lightgrey;
+            }
+
+/*********************************************************************************/
+/* Background transition                                                           */
+/*********************************************************************************/
+
+.slide_photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/et2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*********************************************************************************/
+/* Icons                                                        */
+/*********************************************************************************/
+
+.icon:before {
+    font-size: 1em;
+    text-decoration: none;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    padding-right: 4px;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga" 1, "dlig" 1;
+    -o-font-feature-settings: "liga" 1, "dlig" 1;
+    font-feature-settings: "liga" 1, "dlig" 1;
+}
